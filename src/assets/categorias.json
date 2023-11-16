@@ -1,0 +1,77 @@
+[
+  {
+    "titulo": "Coco puro",
+    "slug": "coco-puro",
+    "id": 2
+  },
+  {
+    "titulo": "Jabón en polvo",
+    "slug": "jabon-en-polvo",
+    "id": 3
+  },
+  {
+    "titulo": "Suavizante",
+    "slug": "suavizante",
+    "id": 4
+  },
+  {
+    "titulo": "Desodorante",
+    "slug": "desodorante",
+    "id": 5
+  },
+  {
+    "titulo": "Detergente",
+    "slug": "detergente",
+    "id": 6
+  },
+  {
+    "titulo": "Lavandina",
+    "slug": "lavandina",
+    "id": 7
+  },
+  {
+    "titulo": "Tocador",
+    "slug": "tocador",
+    "id": 8
+  },
+  {
+    "titulo": "General",
+    "slug": "general",
+    "id": 1
+  },
+  {
+    "titulo": "Jabón prensado",
+    "slug": "jabon-prensado",
+    "id": 9
+  },
+  {
+    "titulo": "Jabón de lavar",
+    "slug": "jabon-de-lavar",
+    "id": 10
+  },
+  {
+    "titulo": "Bolsa",
+    "slug": "bolsa",
+    "id": 11
+  },
+  {
+    "titulo": "Trapo",
+    "slug": "trapo",
+    "id": 12
+  },
+  {
+    "titulo": "Otros servicios",
+    "slug": "otros-servicios",
+    "id": 13
+  },
+  {
+    "titulo": "Jabón en Liquido",
+    "slug": "jabon-en-liquido",
+    "id": 15
+  },
+  {
+    "titulo": "Limpiador",
+    "slug": "limpiador",
+    "id": 48
+  }
+]
