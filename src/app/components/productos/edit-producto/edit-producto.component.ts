@@ -96,6 +96,7 @@ export class EditProductoComponent implements OnInit {
     this.load_etiquetas = true;
     this._adminService.listar_etiquetas_producto_admin(this.id, this.token).subscribe(
       response => {
+        console.log(response.data)
         this.arr_etiquetas = response.data;
         this.load_etiquetas = false;
       }
@@ -165,13 +166,13 @@ export class EditProductoComponent implements OnInit {
 
   eliminar_etiqueta(id: number) {
     console.log(id)
-    /*   this.load_etiquetas = true;
-      this._adminService.eliminar_etiqueta_producto_admin(id, this.token).subscribe(
-        response => {
-          this.listar_etiquetas_producto();
-          this.load_etiquetas = false;
-        }
-      ); */
+    this.load_etiquetas = true;
+    this._adminService.eliminar_etiqueta_producto_admin(id, this.token).subscribe(
+      response => {
+        this.listar_etiquetas_producto();
+        this.load_etiquetas = false;
+      }
+    );
   }
 
   agregar_etiqueta() {
@@ -201,17 +202,12 @@ export class EditProductoComponent implements OnInit {
       if (!this.producto.precio || this.producto.precio == undefined) {
         this.producto.precio = 0;
       }
-
-      if (!this.producto.precioAntesDolares || this.producto.precioAntesDolares == undefined) {
-        this.producto.precioAntesDolares = 0;
-      }
-
+      data.img = this.imgSelect;
+      data.file = this.file;
       data.titulo = this.producto.titulo;
       data.stock = this.producto.stock;
       data.precio = this.producto.precio;
-      data.precioAntesDolares = this.producto.precioAntesDolares;
       data.precio = this.producto.precio;
-      data.precioAntesDolares = this.producto.precioAntesDolares;
       data.peso = this.producto.peso;
       data.sku = this.producto.sku;
       data.categoria = this.producto.categoria;

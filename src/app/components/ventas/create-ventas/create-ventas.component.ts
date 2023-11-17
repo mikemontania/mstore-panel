@@ -240,7 +240,7 @@ export class CreateVentasComponent implements OnInit {
     this.venta.envio_precio = this.envio_input;
     this.venta.subtotal = this.neto_pagar - this.venta.envio_precio;
     this.venta.total_pagar = this.neto_pagar;
-    this.venta.currency = 'PEN';
+    this.venta.currency = 'GS';
     this.venta.transaccion = 'VENTAMANUAL';
 
     this.venta.detalles = this.dventa;

@@ -64,7 +64,7 @@ export class CreateProductoComponent implements OnInit {
     let arr_label = this.new_etiqueta.split('_');
 
     this.arr_etiquetas.push({
-      etiqueta: arr_label[0],
+      id: arr_label[0],
       titulo: arr_label[1]
     });
     this.new_etiqueta = '';

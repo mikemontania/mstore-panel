@@ -97,7 +97,7 @@
                             <div class="ms-auto py-2" *ngIf="!load_etiquetas">
                               <ng-container *ngFor="let item of arr_etiquetas; let indice = index">
                                 <a *ngIf="item.etiqueta != null" class="badge badge-secondary text-white mr-3"
-                                  style="cursor: pointer;" (click)="eliminar_etiqueta(item)">
+                                  style="cursor: pointer;" (click)="eliminar_etiqueta(item.id)">
                                   {{item.etiqueta.titulo}}
                                 </a>
                               </ng-container>
@@ -126,17 +126,7 @@
                           [(ngModel)]="producto.precio">
                       </div>
 
-                      <div class="col-lg-12 form-group">
-                        <label for=""><b>Precio USD(*) </b></label>
-                        <input type="number" class="form-control" placeholder="Precio" required
-                          name="precioAntesDolares" [(ngModel)]="producto.precioAntesDolares">
-                      </div>
 
-                      <div class="col-lg-12 form-group">
-                        <label for="">Precio dolares(*)</label>
-                        <input type="number" class="form-control" placeholder="Precio dolar" required
-                          name="precioAntesDolares" [(ngModel)]="producto.precioAntesDolares">
-                      </div>
                       <div class="col-lg-12 form-group">
                         <label for="">Peso(*) </label>
                         <input type="text" class="form-control" placeholder="Peso" required name="peso"
